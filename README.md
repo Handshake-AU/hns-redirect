@@ -12,4 +12,4 @@ Note. This will redirect to an browser error page if your requested domain doesn
 
 ## Resolvers supported
 This method requires DANE, to connect to a https/ssl handshake domain.
-Fingertip is currently the best resolver for this, [Get finger tip here](https://impervious.com/fingertip.html)
+Fingertip is currently the best resolver for this, [Get fingertip here](https://impervious.com/fingertip.html)
