@@ -3,12 +3,11 @@ Redirect ICANN domain to Handshake, this allows anyone with a Handshake resolver
 
 Redirect ICANN Domains to handshake by adding the below code to your ICANN website. Replace hnsdomain with the domain you want your users redirected to
 
-## Redirect to http handshake site
-`<script src="https://gday.hnsau/redirect.js" domain="hnsdomain"></script>`
-
-## Redirect to https handshake site
-`<script src="https://gday.hnsau/handshake.js" domain="hnsdomain"></script>`
-Note. This will redirect to an browser error page if your requested domain doesn't support ssl/https
+## Redirect to handshake site
+Just upload the `redirect.js` file to your webserver and add the following code snippet to the `<head></head>` section of the pages that should be redirected to the HNS domain (by adding it to the `<head></head>` section the `<body></body>` section won't have to be loaded first). Replace `HNSTOREDIRECT` with your HNS domain with the path to the `redirect.js` file and replace `HNSDOMAIN` with your HNS domain.
+```html
+	<script src="HNSTOREDIRECT" domain="HNSDOMAIN"></script>
+```
 
 ## Resolvers supported
 This method requires DANE, to connect to a https/ssl handshake domain.
